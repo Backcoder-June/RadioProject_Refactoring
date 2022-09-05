@@ -6,21 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>라디오세상</title>
-    <!-- Meta Tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="expire" content="-1" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <meta name="robots" content="index,follow" />
     <!-- css, javascript -->
-    <script type="text/javascript" src="js-3.1.1.js"></script>
-    <script type="text/javascript" src="js-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/import.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function(){
 

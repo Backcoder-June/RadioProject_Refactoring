@@ -1,7 +1,7 @@
 < RadioProject Refactoring >
 
 1. Spring Boot 환경으로 구현
-( DAO interface 로 refactoring )
+( mybatis - interface DAO 로 refactoring )
 
 2. Login process 리펙토링
 
@@ -14,3 +14,15 @@
 6. 회원가입 시, 아이디 중복확인 기능 구현
 
 7. 회원가입 시, 정보 미등록 상태에서 submit 시, prevent 및 alert 추가
+
+8. 페이징처리 리펙토링
+
+9. 해당게시물 조회 리펙토링
+( model 에 dto만 add => 나머진 뽑아쓰고 / View 단에서 EL 처리 )
+
+10. 게시물 수정 /삭제시 confirm / alert 처리
+( 수정/삭제 form 에 필요없는 input hidden 제거 )
+
+11. 추천 기능 리팩토링
+( 중복 확인하는 likeCheck 컬럼 삭제 =>
+ memberid / boardseq 로 select count(*) 한 결과로 중복 check 대체 )

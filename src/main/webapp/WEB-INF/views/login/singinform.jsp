@@ -21,6 +21,7 @@
 <script src="js/jquery-3.6.0.min.js" ></script>
 <script>
 $(document).ready(function(){
+
     let check = 0;
 $("#idChk").on("click", function(){
 	//alert(this.value);

@@ -6,7 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @MapperScan(basePackages = "member")
+@MapperScan(basePackages = "board")
 @ComponentScan(basePackages= "member")
+@ComponentScan(basePackages= "board")
 @ComponentScan
 @SpringBootApplication
 public class CloneRadioprojectApplication {

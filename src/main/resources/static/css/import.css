@@ -1,52 +1,6 @@
 @charset "utf-8";
 
 
-@font-face { 
-    font-family:'NBGBold';
-    font-style:normal;
-/*     font-weight:700; */
-    src:url('../font/NBGBold.eot');
-    src:url('../font/NBGBold.eot?#iefix') format('embedded-opentype'), url('../font/NBGBold.woff') format('woff'), url('../font/NBGBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:'NBG';
-    font-style:normal;
-    font-weight:400;    
-    src:url('../font/NBG.eot');
-    src:url('../font/NBG.eot?#iefix') format('embedded-opentype'), url('../font/NBG.woff') format('woff'), url('../font/NBG.ttf') format('truetype');
-}
-@font-face {
-    font-family:'NBGLight';
-    font-style:normal; 
-    font-weight:300;
-    src:url('../font/NBGLight.eot');
-    src:url('../font/NBGLight.eot?#iefix') format('embedded-opentype'), url('../font/NBGLight.woff') format('woff'), url('../font/NBGLight.ttf') format('truetype');
-}
-@font-face { 
-    font-family:'NSEBold';
-    font-style:normal;
-    src:url('../font/NanumSquareEB.ttf') format('truetype');
-}
-
-@font-face { 
-    font-family:'NSBold';
-    font-style:normal;
-    src:url('../font/NanumSquareB.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:'NS';
-    font-style:normal;
-    font-weight:400;    
-    src:url('../font/NanumSquareR.ttf') format('truetype');
-}
-@font-face {
-    font-family:'NSLight';
-    font-style:normal; 
-    font-weight:300;
-    src:url('../font/NanumSquareL.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'PreBlack';
@@ -73,34 +27,9 @@
     src: local('Pretendard Black'), url('../font/pretendard/woff2/Pretendard-Light.woff2') format('woff2'), url('../font/pretendard/woff/Pretendard-Light.woff') format('woff');
 }
 
-@font-face {
-    font-family:'CPBold';
-    font-style:normal; 
-    src:url('../font/ChakraPetch/ChakraPetch-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family:'CPSemiBold';
-    font-style:normal; 
-    src:url('../font/ChakraPetch/ChakraPetch-SemiBold.ttf') format('truetype');
-}
-@font-face {
-    font-family:'CPMedium';
-    font-style:normal; 
-    src:url('../font/ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
-}
-@font-face {
-    font-family:'CPRegular';
-    font-style:normal; 
-    src:url('../font/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family:'CPLight';
-    font-style:normal; 
-    src:url('../font/ChakraPetch/ChakraPetch-Light.ttf') format('truetype');
-}
 
 html, body {margin:0; padding:0;}
-body {height:100%; font-size:16px; background-color:#ffffff;  letter-spacing:-0.2px; color:#333333; font-style: normal; font-family:'NBG', sans-serif;}
+body {height:100%; font-size:16px; background-color:#ffffff;  letter-spacing:-0.2px; color:#333333; font-style: normal; font-family:'PreRegular', sans-serif;}
 div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, fieldset, p, a, iframe, span, img, input, table, th, td {margin:0; padding:0;}
 h1, h2, h3, h4, h5, h6 {font-size:15px;}
 ol, ul {list-style:none;}
@@ -127,7 +56,7 @@ input[type=submit] {-webkit-appearance:none;}
 button {border: 0; border-radius: 0; background-color: transparent; outline: 0; cursor: pointer;}
 .bt_area { position: relative; width: 100%; font-size: 0; text-align: center;}
 .bt_area [class^=bt_]{overflow: hidden; font-size: 0; line-height: 999px; color: transparent; vertical-align: top; vertical-align: top;}
-.bt_area2 {padding-bottom: 100px; color: #333333; font-family: NBG; font-size: 20px; line-height: 28px;}
+.bt_area2 {padding-bottom: 100px; color: #333333; font-family: PreRegular; font-size: 20px; line-height: 28px;}
 .leftfloat {float: left;}v
 .rightfloat {float: right;}
 
@@ -135,7 +64,7 @@ a:link,  a:visited {text-decoration:none;}
 a:hover,  a:active {text-decoration:none;}
 
 #skipnavigation a {position:absolute; left:-3000%;}
-#skipnavigation a:focus {display:block; left:0; top:0; z-index:10000000000; width:100%; line-height:60px; background:#fff; border-bottom: 1px solid #d8d8d8; color:#5a0ccf; font-family: NBGBold; text-align:center; outline: none;}
+#skipnavigation a:focus {display:block; left:0; top:0; z-index:10000000000; width:100%; line-height:60px; background:#fff; border-bottom: 1px solid #d8d8d8; color:#5a0ccf; font-family: PreRegular; text-align:center; outline: none;}
 
 .blind {position:absolute; top:0px; left:-10000px;font-size:0;line-height:0;}
 .skip a:hover,.skip a:active,.skip a:focus {top:0;}
