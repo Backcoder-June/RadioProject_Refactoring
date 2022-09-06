@@ -7,6 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @MapperScan(basePackages = "member")
 @MapperScan(basePackages = "board")
+@MapperScan(basePackages = "comment")
+@ComponentScan(basePackages= "comment")
 @ComponentScan(basePackages= "member")
 @ComponentScan(basePackages= "board")
 @ComponentScan

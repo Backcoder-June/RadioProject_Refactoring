@@ -74,7 +74,7 @@ $(document).ready(function(){
 					<option value="writer">작성자</option>
 				</select>
 			
-			 : <input type="text" name="search" style="width: 250px;height: 30px; margin: 5px">
+			  <input type="text" name="search" style="width: 250px;height: 30px; margin: 5px">
 				<input type="submit" value="검색" style="width: 80px;height: 35px;  margin: 5px">
 			</form>
 	    </div>

@@ -26,3 +26,6 @@
 11. 추천 기능 리팩토링
 ( 중복 확인하는 likeCheck 컬럼 삭제 =>
  memberid / boardseq 로 select count(*) 한 결과로 중복 check 대체 )
+
+
+12. 검색기능 / 댓글 CRUD, 비밀글 기능  interface DAO 로  리팩토링

@@ -52,7 +52,6 @@ $(document).ready(function(){
 </form>
 
 <br>
-
-
+    </div>
 </body>
 </html>

@@ -8,7 +8,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/comment.css">
 <script src="js/jquery-3.6.0.min.js" ></script>
-<!-- <script src="${path}/resources/js/comment.js" ></script> -->
 <script>
 $(function() {
 	let sessionId = '<%= session.getAttribute("id") %>';
@@ -20,7 +19,7 @@ $(function() {
 		type: 'post',
 		dataType:'json',
 		success: function(res) {
-			list = res.commentList;
+			list = res;
 			
 			$.each(list,function(i, item) {
 				$("#comment").append("<li></li>");
@@ -31,7 +30,7 @@ $(function() {
 						"<span class='writer'>" + item.writer + "</span>"
 						+ "<span class='date'>" + item.writingtime + "</span>"
 						+ "<span class='isSecret'>" + (item.secret == 1 ? "비밀글입니다" : "") + "</span>"
-						
+
 						+ (item.secret == 1 && sessionId == item.writer ? "<p class='contents'>" + item.contents + "</p>"
 								: (item.secret != 1 ? "<p class='contents'>" + item.contents + "</p>" : ""))
 						
@@ -46,6 +45,8 @@ $(function() {
 		 }
 	})
 })
+
+
 $(document).ready(function(){
 	$("#submitBtn").on("click", function() {
 		let secret;
@@ -54,7 +55,8 @@ $(document).ready(function(){
 
 		if($("#contents").val() != '') {
 			if($("#secretCheckBtn").is(":checked") == true) { secret = 1 } else { secret = 0 };
-				
+
+
 			$.ajax({
 				url: ${param.seq}  + '/insertComment',
 				data: {writer: sessionId, contents: $("#contents").val(), secret: secret, seq: seq},

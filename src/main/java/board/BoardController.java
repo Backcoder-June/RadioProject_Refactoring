@@ -111,8 +111,8 @@ public class BoardController {
 	}
 
 	// 검색
-	@RequestMapping("/searchboard")
-	public ModelAndView searchList(String item, String search) {
+	@GetMapping("/searchboard")
+	public String searchList(String item, String search, Model model) {
 
 		HashMap<String, String> map = new HashMap();
 		map.put("item", item);
@@ -120,9 +120,7 @@ public class BoardController {
 
 		List<BoardDTO> searchList = boardDAO.searchList(map);
 
-		ModelAndView mv = new ModelAndView();
-		mv.addObject("boardlist", searchList);
-		mv.setViewName("board/boardList2");
-		return mv;
+		model.addAttribute("boardlist", searchList);
+		return "board/boardList2";
 	}
 }

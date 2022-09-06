@@ -112,9 +112,7 @@ public class MemberController {
     @ResponseBody
     @PostMapping("/idChk")
     public int idChk(String id) {
-        System.out.println(id);
         MemberDTO result = memberDAO.logincheck(id);
-        System.out.println(result);
         int idChk = 0;
         if (result != null) {
             idChk = 1;
